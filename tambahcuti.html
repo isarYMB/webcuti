@@ -22,105 +22,104 @@
     
 </head>
 <body>    
-    <div class="user">
-        <nav id="sidebar">
-            <div class="container-fluid">
-                <div class="header navbar-brand">
-                    <div class="image-text">
-                        <span class="image">
-                            <a href="user.html">
-                                <img src="img/Logo2 2.svg" alt="logo">
-                            </a>
-                        </span>
-                        <div class="text header-text">
-                            <span class="pengguna">
-                             USER
-                            </span>
-                            <span class="mailpengguna">
-                            user2gmail.com 
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu">
-                    <ul class="navbar-nav flex-grow-1 pe-3">
-                        <li class="nav-item active">
-                          <a class="nav-link" aria-current="page" href="user.html">
-                            <i class="bi bi-file-text-fill icon" ></i>
-                            <span class="text">Pengajuan Cuti</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ubahprofil_user.html">
-                            <i class="bi bi-people-fill icon" ></i>
-                            <span class="text">Ubah Profil</span></a>
-                        </li>
-                        <li class="nav-item align-content-end style=margin-top: 24px;">
-                        <a class="nav-link table-hover" aria-current="page" href="login.html">
-                            <i class="bi bi-box-arrow-left icon" ></i>
-                            <span class="text">Keluar</span>
-                        </a>
-                        </li>
-                       
-                    </ul>
-                </div>
+    <div class="sidebar d-flex flex-column flex-shrink-0" id="sidebar">               
+        <div class="image-text">
+            <span class="image">
+                <a href="user.html">
+                    <img src="img/Logo2 2.svg" alt="logo">
+                </a>
+            </span>
+            <div class="row">
+                <span class="pengguna">
+                 <h2>USER</h2> 
+                </span>
+                <span class="mailpengguna">
+                user2gmail.com 
+                </span>
             </div>
-        </nav>
-    <div class="container-fluid" id="content">
-
-        <!-- Page Heading -->
-        <div class="heading d-flex" >
-            <div class="heading-text">
-                <button class="btn btn-lg  btn-details" id="sidebarCollapse" type="button">
-                    <i class="bi bi-list" style="color:white;"></i>
-                </button>
-            </div>
+        </div>               
+        <div class="menu nav nav-pills flex-column mb-auto">
+            <ul class="navbar-nav ">
+                <li class="nav-item active ">
+                <a class="nav-link" aria-current="page" href="User.html">
+                    <i class="bi bi-file-text-fill icon" ></i>
+                    <span class="text">Pengajuan Cuti</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="ubahprofil_user.html">
+                    <i class="bi bi-people-fill icon" ></i>
+                    <span class="text">Ubah Profil</span></a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="menu keluar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="login.html">
+                    <i class="bi bi-toggle2-off"></i>
+                <span class="text">Keluar</span>
+                </a>
+            </li>  
+            </ul>
             
-            <div class="row">
-                <p class="heading-text text-white">Menu Permohonan Cuti</p>
-                <h1 class="heading-text text-white">Tambah Cuti</h1>
-            </div>        
         </div>
-        <div class="container">
-            <!-- Content Row -->
+    </div>
+
+    <div class="main">
         <div class="row">
-        </div>
-        </div>
-        <div class="container">    
-            <div class="row">
-                <!-- Area Chart -->
-                <div class="col-sm-3 col-md-8 col-lg-8 col-xl-12">
-                    <div class="card d-inline-flex">
-                        <div class="row">
-                            <div class="card-body" >
-                                <form class="row" action="#">
-                                    <div class="my-2">
-                                        <label for="date" class="col-form-label">Tanggal Cuti</label>
-                                        <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
-                                    </div>
-                                    <div class="my-2">
-                                        <label for="comment">Alasan Cuti:</label>
-                                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea> 
+            <div class="container">
+                
+                    <div class="heading-text">
+                        <button class="btn btn-lg  btn-details" id="sidebarCollapse" type="button">
+                            <i class="bi bi-list" style="color:white;"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="row">
+                        <p class="heading-text text-white">Menu Permohonan Cuti</p>
+                        <h1 class="heading-text text-white">Tambah Cuti</h1>
+                    </div>        
+                
+            </div>
+            <div class="col-sm-9 col-md-8 col-lg-11" id="konten">    
+                <div class="row">
+                    <!-- Area Chart -->
+                    <div class="col-sm-3 col-md-8 col-lg-8 col-xl-12">
+                        <div class="card d-inline-flex">
+                            <div class="row">
+                                <div class="card-body" >
+                                    <form class="row" action="#">
+                                        <div class="my-2">
+                                            <label for="date" class="col-form-label">Tanggal Cuti</label>
+                                            <input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+                                        </div>
+                                        <div class="my-2">
+                                            <label for="comment">Alasan Cuti:</label>
+                                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea> 
+                                            
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <a  href="#">
+                                                <button type="submit" class="btn btn-warning">Submit</button>
+                                            </a>
+                                        </div>
+          
+                                       
                                         
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a  href="#">
-                                            <button type="submit" class="btn btn-warning">Submit</button>
-                                        </a>
-                                    </div>
-      
-                                   
-                                    
-                                  </form> 
+                                      </form> 
+                                
+                                        
+                                </div>
+                            </div>   
                             
-                                    
-                            </div>
-                        </div>   
-                        
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     
